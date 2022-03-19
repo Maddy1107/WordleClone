@@ -1,91 +1,157 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public ContainerManagers container;
-    public ColorScript colors;
+    public GridCreatorScript _grid;
 
-    public string currentword;
-    public string enteredWord;
+    [Header ("Words")]
+    public string _currentword;
+    public string _enteredWord;
 
-    public List<string> currentwordLetters;
-    public List<string> enteredWordletters;
+    [Header("Letters")]
+    public List<string> _currentwordLetters;
+    public List<string> _enteredWordletters;
+
+    [Header("Letter Slots")]
+    public List<LetterScript> lettersPrefab;
+
+    [Header("Current Letter Pos & Tries")]
+    public int currentLetterIndex = 0;
+    public int triesIndex = 1;
+
+    public bool isGridGenerating = true;
+    public bool isChecking = false;
 
     private void Awake() => instance = this;
 
     private void Start()
     {
-        colors = GetComponent<ColorScript>();
-        currentword = WordLibraryManager.instance.GetRandomWord();
+        _grid.GridInit();
+        GetNewWord();
+    }
+
+    private void GetNewWord()
+    {
+        _currentword = WordLibraryManager.instance.GetRandomWord();
         SplitWord();
     }
 
+    #region Split/Join Word To/From List
     public void SplitWord()
     {
-        for (int i = 0; i < currentword.Length - 1; i++)
+        for (int i = 0; i < _currentword.Length - 1; i++)
         {
-            currentwordLetters.Add(System.Convert.ToString(currentword[i]));
+            _currentwordLetters.Add(System.Convert.ToString(_currentword[i]));
         }
     }
 
     public void JoinWord()
     {
-        enteredWord = "";
-        for (int i = 0; i < enteredWordletters.Count; i++)
+        _enteredWord = "";
+        for (int i = 0; i < _enteredWordletters.Count; i++)
         {
-            enteredWord += enteredWordletters[i].ToLower();
+            _enteredWord += _enteredWordletters[i].ToLower();
         }
     }
 
+    #endregion
+
+    #region Add/Delete Letter
     public void AddNewLetter(string letter)
     {
-        if (enteredWordletters.Count < 5)
+        if (_enteredWordletters.Count < _grid.WordLength && !isGridGenerating)
         {
-            container.AddLetter(letter);
-            enteredWordletters.Add(letter);
+            lettersPrefab[(triesIndex * _grid.WordLength) + currentLetterIndex].SetLetterText(letter);
+            currentLetterIndex += 1;
+            _enteredWordletters.Add(letter);
         }
     }
 
     public void DeleteLastLetter()
     {
-        if (enteredWordletters.Count > 0)
+        if (_enteredWordletters.Count > 0)
         {
-            container.DeleteLetter();
-            enteredWordletters.RemoveAt(enteredWordletters.Count - 1);
+            currentLetterIndex -= 1;
+            lettersPrefab[(triesIndex * _grid.WordLength) + currentLetterIndex].ClearLetterContainer();
+            _enteredWordletters.RemoveAt(_enteredWordletters.Count - 1);
         }
     }
 
+    #endregion
+
+    #region MainLogic
     public void CheckWord()
     {
         JoinWord();
-        Debug.Log(WordLibraryManager.instance.CheckifValid(enteredWord + " "));
-        Debug.Log(WordLibraryManager.instance.CheckifValid(enteredWord));
+        Debug.Log(WordLibraryManager.instance.CheckifValid(_enteredWord + " "));
+        Debug.Log(WordLibraryManager.instance.CheckifValid(_enteredWord));
 
-        if (true)
+        if (_enteredWord.Length < _grid.WordLength)
+            Shake();
+        else
         {
-            for (int i = 0; i < 5; i++)
+            if (true)
             {
-                if(enteredWord[i] == currentword[i])
+                for (int i = 0; i < _grid.WordLength; i++)
                 {
-                    container.SetColor(i, colors.GetCorrectColor());
+                    int index = (triesIndex * _grid.WordLength) + i;
+
+                    bool correct = _enteredWord[i] == _currentword[i];
+
+                    if (!correct)
+                    {
+                        bool letterinWord = false;
+                        for (int j = 0; j < _grid.WordLength; j++)
+                        {
+                            letterinWord = _enteredWord[i] == _currentword[j];
+                            if (letterinWord)
+                                break;
+                        }
+                        StartCoroutine(PlayLetterAnim(index, i * 0.5f, letterinWord ? "partial" : "wrong"));
+                    }
+                    else
+                    {
+                        StartCoroutine(PlayLetterAnim(index, i * 0.5f, "correct"));
+                    }
                 }
-                else
-                {
-                    container.SetColor(i, colors.GetWrongColor());
-                }
+                ResetForNextTry();
             }
-            ResetForNextTry();
         }
+    }
+    #endregion
+
+    private void Shake()
+    {
+        for (int i = 0; i < _grid.WordLength; i++)
+        {
+            lettersPrefab[(triesIndex * _grid.WordLength) + i].SetState("invalid");
+        }
+        GameEvents.Toast?.Invoke("NOT ENOUGH LETTERS!!");
+    }
+
+    IEnumerator PlayLetterAnim(int index, float gapTime, string trigger)
+    {
+        yield return new WaitForSeconds(gapTime);
+        lettersPrefab[index].SetState(trigger);
     }
 
     public void ResetForNextTry()
     {
-        container.MovetoNextWord();
-        enteredWord = "";
-        enteredWordletters.Clear();
+        if (triesIndex >= 5)
+            GameEvents.Toast?.Invoke("GAME COMPLETE");
+        else
+        {
+            isChecking = false;
+            currentLetterIndex = 0;
+            triesIndex += 1;
+            _enteredWord = "";
+            _enteredWordletters.Clear();
+        }
     }
 
 }
