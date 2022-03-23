@@ -133,12 +133,17 @@ PrefabInstance:
     - target: {fileID: 607614021993131798, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2676330146724619202, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452068232845909573, guid: d60b82fcdaa3dd845b600251b02bc379,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.70980394
       objectReference: {fileID: 0}
     - target: {fileID: 6452068232845909573, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
@@ -148,17 +153,17 @@ PrefabInstance:
     - target: {fileID: 6452068232845909573, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.880132
       objectReference: {fileID: 0}
     - target: {fileID: 6452068232845909573, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6452068232845909574, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6452068233852812210, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
@@ -308,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 9109723965538600121, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9109723965728529900, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
@@ -374,7 +379,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
