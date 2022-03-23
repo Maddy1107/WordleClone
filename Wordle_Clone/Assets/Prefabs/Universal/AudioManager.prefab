@@ -50,9 +50,3 @@ MonoBehaviour:
     loop: 0
     volume: 1
     playAwake: 0
-  - name: Scale
-    clip: {fileID: 8300000, guid: 93424d7bc6afe6845b6c5ef2554edb6b, type: 3}
-    source: {fileID: 0}
-    loop: 0
-    volume: 1
-    playAwake: 0

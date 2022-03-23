@@ -130,10 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 424452517869297939, guid: d60b82fcdaa3dd845b600251b02bc379,
+    - target: {fileID: 2288693508668459626, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: -148.40393
       objectReference: {fileID: 0}
     - target: {fileID: 6452068234694937137, guid: d60b82fcdaa3dd845b600251b02bc379,
         type: 3}
@@ -409,11 +409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6136323149269470302, guid: b603d4938b168f6408f1298398e7dd6f,
-        type: 3}
-      propertyPath: sound.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 641104814502404624, guid: b603d4938b168f6408f1298398e7dd6f,
         type: 3}
       propertyPath: m_Name
@@ -592,11 +587,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Effects
-      objectReference: {fileID: 0}
-    - target: {fileID: 7958725756358472072, guid: f509fa3f7e3a5ea469993e97339f8263,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f509fa3f7e3a5ea469993e97339f8263, type: 3}
