@@ -54,8 +54,6 @@ public class GameManager : MonoBehaviour
         _currentword = WordLibraryManager.instance.GetRandomWord();
         _currentword = _currentword.Remove(_currentword.Length - 1);
 
-        //status.text = _currentword.ToUpper();
-
         SplitWord();
     }
 
@@ -223,6 +221,8 @@ public class GameManager : MonoBehaviour
         lettersPrefab.Clear();
 
         _grid.GridInit();
+
+        status.text = "";
 
         triesIndex = 0;
         currentLetterIndex = 0;

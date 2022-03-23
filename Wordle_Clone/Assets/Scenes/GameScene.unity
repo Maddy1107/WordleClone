@@ -377,11 +377,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5923426626871112989, guid: f509fa3f7e3a5ea469993e97339f8263,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7958725756358472072, guid: f509fa3f7e3a5ea469993e97339f8263,
         type: 3}
       propertyPath: m_Name
@@ -390,7 +385,7 @@ PrefabInstance:
     - target: {fileID: 7958725756358472072, guid: f509fa3f7e3a5ea469993e97339f8263,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f509fa3f7e3a5ea469993e97339f8263, type: 3}
@@ -488,11 +483,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 794099554591025393, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574146759069810561, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -821.8765
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574146759069810561, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -401
+      objectReference: {fileID: 0}
     - target: {fileID: 4574146760550884061, guid: ad26583172ef81d4487742a9d239dd14,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1795240992}
+    - target: {fileID: 5442471526505631158, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5643470907772531213, guid: ad26583172ef81d4487742a9d239dd14,
         type: 3}
       propertyPath: m_Pivot.x
