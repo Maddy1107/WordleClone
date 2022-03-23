@@ -31,6 +31,12 @@ public class WordLibraryManager : MonoBehaviour
 
     public bool CheckifValid(string word)
     {
-        return allowedwords.Contains(word) || allwords.Contains(word);
+        Debug.Log(word.Length);
+        Debug.Log(word.GetType()); ;
+        Debug.Log(allowedwords[0].Length);
+        Debug.Log(allowedwords[0].GetType());
+        Debug.Log(word == allowedwords[0]);
+        
+        return allowedwords.Contains(word);// || allwords.Contains(word);
     }
 }

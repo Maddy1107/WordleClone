@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class WordExtractor : MonoBehaviour
 {
+    public static List<string> words = null;
+
     public static List<string> GetWords(TextAsset textFile)
     {
-        return textFile.text.Split('\n').ToList();
+        words =  new List<string>(textFile.text.Split('\n'));
+        return words;
     }
 }

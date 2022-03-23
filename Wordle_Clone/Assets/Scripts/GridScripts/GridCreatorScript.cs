@@ -16,7 +16,7 @@ public class GridCreatorScript : MonoBehaviour
 
     [SerializeField] private GameObject letterPrefab;
 
-    [SerializeField] LetterScript[] letterObjs;
+    private float _animGapTime = 0.03f;
 
     public void GridInit()
     {
@@ -38,14 +38,15 @@ public class GridCreatorScript : MonoBehaviour
             GameObject newLetterPrefab = Instantiate(letterPrefab);
             newLetterPrefab.transform.SetParent(this.transform);
             GameManager.instance.lettersPrefab.Add(newLetterPrefab.GetComponent<LetterScript>());
-            StartCoroutine(ShowBlock(i * 0.03f,newLetterPrefab.GetComponent<LetterScript>()));
+            StartCoroutine(ShowBlock(i * _animGapTime,newLetterPrefab.GetComponent<LetterScript>()));
         }
     }
 
     IEnumerator ShowBlock(float offset,LetterScript letterBlock)
     {
         yield return new WaitForSeconds(offset);
-        letterBlock.SetState("idle");
-        GameManager.instance.isGridGenerating = false;
+        letterBlock.SetStateInt((int)LetterState.original);
+        if (offset/ _animGapTime >= (wordLength * rows) - 1)
+            GameManager.instance.ChangeState(GameState.idle);
     }
 }

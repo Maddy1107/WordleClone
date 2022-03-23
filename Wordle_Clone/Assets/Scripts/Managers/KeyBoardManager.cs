@@ -1,15 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] KeyCode _keyCode;
+    [Serializable]
+    public struct BtnColor
+    {
+        public LetterState letterstate;
+        public Color color;
+    }
+
+    public KeyCode _keyCode;
 
     Text btnText;
 
+    Image btnImage;
+
+    public BtnColor[] btnColor;
+
     private void Start()
     {
+        btnImage = gameObject.transform.GetChild(0).GetComponent<Image>();
         btnText = GetComponentInChildren<Text>();
         SetKeyboardButtonText();
     }
@@ -27,6 +40,7 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
     public void onTyped()
     {
         GameManager.instance.AddNewLetter(_keyCode.ToString());
+        GameManager.instance.keys.Add(this);
     }
 
     public void Submit()
@@ -39,9 +53,16 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
         GameManager.instance.DeleteLastLetter();
     }
 
-    public void SetKeyboardLetterColor()
+    public void SetKeyBoardColor(LetterState currState)
     {
-
+        foreach (BtnColor state in btnColor)
+        {
+            if(state.letterstate == currState)
+            {
+                btnImage.color = state.color;
+                break;
+            }
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

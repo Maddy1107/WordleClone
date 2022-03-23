@@ -1,50 +1,73 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    #region Variables
     public static GameManager instance;
 
-    public GridCreatorScript _grid;
+    [SerializeField] private GridCreatorScript _grid;
 
-    [Header ("Words")]
-    public string _currentword;
-    public string _enteredWord;
+    [SerializeField] private GameObject keyboard;
+    [SerializeField] private GameObject Canvas;
 
-    [Header("Letters")]
-    public List<string> _currentwordLetters;
-    public List<string> _enteredWordletters;
+    [SerializeField] private GameObject gameOverCanvas;
 
-    [Header("Letter Slots")]
+    [SerializeField] Text status;
+
+    private string _currentword;
+    private string _enteredWord;
+
+    private List<string> _currentwordLetters = new List<string>();
+    private List<string> _enteredWordletters = new List<string>();
+
     public List<LetterScript> lettersPrefab;
 
-    [Header("Current Letter Pos & Tries")]
-    public int currentLetterIndex = 0;
-    public int triesIndex = 1;
+    public List<KeyBoardManager> keys = new List<KeyBoardManager>();
 
-    public bool isGridGenerating = true;
-    public bool isChecking = false;
+    private int currentLetterIndex = 0;
+    private int triesIndex = 0;
+
+    private GameState currentState = GameState.isGridGenerating;
+
+    #endregion
 
     private void Awake() => instance = this;
 
-    private void Start()
+    public void Start()
     {
         _grid.GridInit();
         GetNewWord();
+        GenerateKeyboard();
+    }
+
+    private void GenerateKeyboard()
+    {
+        GameObject newkeyboard = Instantiate(keyboard);
+        newkeyboard.transform.SetParent(Canvas.transform, false);
     }
 
     private void GetNewWord()
     {
         _currentword = WordLibraryManager.instance.GetRandomWord();
+        _currentword = _currentword.Remove(_currentword.Length - 1);
+
+        //status.text = _currentword.ToUpper();
+
         SplitWord();
+    }
+
+    public void ChangeState(GameState state)
+    {
+        currentState = state;
     }
 
     #region Split/Join Word To/From List
     public void SplitWord()
     {
-        for (int i = 0; i < _currentword.Length - 1; i++)
+        for (int i = 0; i < _currentword.Length; i++)
         {
             _currentwordLetters.Add(System.Convert.ToString(_currentword[i]));
         }
@@ -64,7 +87,10 @@ public class GameManager : MonoBehaviour
     #region Add/Delete Letter
     public void AddNewLetter(string letter)
     {
-        if (_enteredWordletters.Count < _grid.WordLength && !isGridGenerating)
+        if (currentState != GameState.idle)
+            return;
+
+        if (_enteredWordletters.Count < _grid.WordLength)
         {
             lettersPrefab[(triesIndex * _grid.WordLength) + currentLetterIndex].SetLetterText(letter);
             currentLetterIndex += 1;
@@ -84,18 +110,20 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-    #region MainLogic
+    #region GameLogic
     public void CheckWord()
     {
         JoinWord();
-        Debug.Log(WordLibraryManager.instance.CheckifValid(_enteredWord + " "));
-        Debug.Log(WordLibraryManager.instance.CheckifValid(_enteredWord));
 
         if (_enteredWord.Length < _grid.WordLength)
+        {
             Shake();
+            GameEvents.Toast?.Invoke("NOT ENOUGH LETTERS!!");
+        }
         else
         {
-            if (true)
+            ChangeState(GameState.isChecking);
+            if (true)//WordLibraryManager.instance.CheckifValid(_enteredWord))
             {
                 for (int i = 0; i < _grid.WordLength; i++)
                 {
@@ -112,46 +140,96 @@ public class GameManager : MonoBehaviour
                             if (letterinWord)
                                 break;
                         }
-                        StartCoroutine(PlayLetterAnim(index, i * 0.5f, letterinWord ? "partial" : "wrong"));
+                        StartCoroutine(PlayLetterAnim(index, i * 0.3f, letterinWord ? LetterState.partial : LetterState.wrong));
                     }
                     else
                     {
-                        StartCoroutine(PlayLetterAnim(index, i * 0.5f, "correct"));
+                        StartCoroutine(PlayLetterAnim(index, i * 0.3f, LetterState.correct));
                     }
                 }
-                ResetForNextTry();
+                if (_enteredWord == _currentword)
+                {
+                    status.text = "YOU WIN \nCORRECT WORD:" + _currentword.ToUpper();
+                    gameOverCanvas.GetComponent<Animator>().SetTrigger("UP");
+                }
+                else if(triesIndex >= 5)
+                {
+                    status.text = "YOU LOOSE \nCORRECT WORD:" + _currentword.ToUpper();
+                    gameOverCanvas.GetComponent<Animator>().SetTrigger("UP");
+                }
+                else
+                    ResetForNextTry();
             }
+            /*else
+            {
+                Shake();
+                GameEvents.Toast?.Invoke("NOT IN WORD LIST");
+                ChangeState(GameState.idle);
+            }*/
         }
     }
-    #endregion
 
     private void Shake()
     {
         for (int i = 0; i < _grid.WordLength; i++)
         {
-            lettersPrefab[(triesIndex * _grid.WordLength) + i].SetState("invalid");
+            lettersPrefab[(triesIndex * _grid.WordLength) + i].SetStateTrigger("invalid");
         }
-        GameEvents.Toast?.Invoke("NOT ENOUGH LETTERS!!");
     }
 
-    IEnumerator PlayLetterAnim(int index, float gapTime, string trigger)
+    IEnumerator PlayLetterAnim(int index, float gapTime, LetterState state)
     {
         yield return new WaitForSeconds(gapTime);
-        lettersPrefab[index].SetState(trigger);
+        lettersPrefab[index].SetStateInt((int)state);
+
+        KeyCode currKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), lettersPrefab[index].containingCharacter);
+        
+        foreach (KeyBoardManager key in keys)
+        {
+            if (key._keyCode == currKey)
+            {
+                key.SetKeyBoardColor(state);
+                break;
+            }
+        }
+        if((index + 1) % _grid.WordLength == 0)
+            ChangeState(GameState.idle);
     }
 
     public void ResetForNextTry()
     {
-        if (triesIndex >= 5)
-            GameEvents.Toast?.Invoke("GAME COMPLETE");
-        else
-        {
-            isChecking = false;
-            currentLetterIndex = 0;
-            triesIndex += 1;
-            _enteredWord = "";
-            _enteredWordletters.Clear();
-        }
+        currentLetterIndex = 0;
+        triesIndex += 1;
+        _enteredWord = "";
+        _enteredWordletters.Clear();
     }
+
+    public void Restart()
+    {
+        ChangeState(GameState.idle);
+
+        GetNewWord();
+
+        foreach (KeyBoardManager key in keys)
+        {
+            key.SetKeyBoardColor(LetterState.original);
+        }
+
+        foreach (LetterScript letters in lettersPrefab)
+        {
+            Destroy(letters.gameObject);
+        }
+
+        lettersPrefab.Clear();
+
+        _grid.GridInit();
+
+        triesIndex = 0;
+        currentLetterIndex = 0;
+        _enteredWord = "";
+        _enteredWordletters.Clear();
+        _currentwordLetters.Clear();
+    }
+    #endregion
 
 }
