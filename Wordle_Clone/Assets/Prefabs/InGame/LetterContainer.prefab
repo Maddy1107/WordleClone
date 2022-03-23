@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02546fc18abab4346a1c1276aa9f61ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  containingCharacter: 
   background: {fileID: 7293456792621572807}
   letterText: {fileID: 3931053851277483887}
 --- !u!95 &689327184
