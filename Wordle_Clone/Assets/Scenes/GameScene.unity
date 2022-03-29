@@ -483,6 +483,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4574146759069810560, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574146759069810560, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4574146760550884061, guid: ad26583172ef81d4487742a9d239dd14,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -597,6 +607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954004784502630745, guid: ad26583172ef81d4487742a9d239dd14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad26583172ef81d4487742a9d239dd14, type: 3}
@@ -857,25 +872,35 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1371957315}
-    - target: {fileID: 3938779174071634687, guid: 9a1d8de66764b904daaca1bc1798d357,
+    - target: {fileID: 3938779173263857755, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
-      propertyPath: m_fontColor.b
+      propertyPath: m_SizeDelta.x
+      value: 139.1944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938779173263857755, guid: 9a1d8de66764b904daaca1bc1798d357,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -957.7548
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938779173263857755, guid: 9a1d8de66764b904daaca1bc1798d357,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 478.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938779173263857757, guid: 9a1d8de66764b904daaca1bc1798d357,
+        type: 3}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3938779174071634687, guid: 9a1d8de66764b904daaca1bc1798d357,
+    - target: {fileID: 3938779173263857757, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
-      propertyPath: m_fontColor.g
+      propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3938779174071634687, guid: 9a1d8de66764b904daaca1bc1798d357,
+    - target: {fileID: 3938779173263857757, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174071634687, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190335
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3938779174232861815, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
@@ -992,50 +1017,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3938779174325527005, guid: 9a1d8de66764b904daaca1bc1798d357,
+    - target: {fileID: 5192823438992639173, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.94361687
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174325527005, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor.g
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3938779174325527005, guid: 9a1d8de66764b904daaca1bc1798d357,
+    - target: {fileID: 7287100310592124461, guid: 9a1d8de66764b904daaca1bc1798d357,
         type: 3}
-      propertyPath: m_fontColor.r
+      propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174325527005, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294049536
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174458717989, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_text
-      value: ' O   I'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174458717989, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174458717989, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174458717989, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.91039276
-      objectReference: {fileID: 0}
-    - target: {fileID: 3938779174458717989, guid: 9a1d8de66764b904daaca1bc1798d357,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294901992
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1d8de66764b904daaca1bc1798d357, type: 3}
