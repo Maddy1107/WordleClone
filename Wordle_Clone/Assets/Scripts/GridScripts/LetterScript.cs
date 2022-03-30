@@ -8,7 +8,7 @@ public class LetterScript : MonoBehaviour
     Animator letterContainerAnim;
 
     readonly int letterContainerAnimStateParameter = Animator.StringToHash("State");
-    private Image image;
+    public Image image;
     [SerializeField] private Text letterText;
 
     private void Start()

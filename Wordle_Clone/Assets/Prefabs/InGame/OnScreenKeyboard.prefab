@@ -232,11 +232,11 @@ MonoBehaviour:
   _keyCode: 114
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &563065633751771289
@@ -331,11 +331,11 @@ MonoBehaviour:
   _keyCode: 105
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &7202097552445974295
@@ -430,11 +430,11 @@ MonoBehaviour:
   _keyCode: 115
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &4626018986673093800
@@ -768,11 +768,11 @@ MonoBehaviour:
   _keyCode: 113
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &8862626945769158850
@@ -1085,11 +1085,11 @@ MonoBehaviour:
   _keyCode: 98
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &111026715162201739
@@ -1263,11 +1263,11 @@ MonoBehaviour:
   _keyCode: 118
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &5429142329616058171
@@ -1520,11 +1520,11 @@ MonoBehaviour:
   _keyCode: 101
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &1376858768016611656
@@ -1619,11 +1619,11 @@ MonoBehaviour:
   _keyCode: 100
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &2710059629247206288
@@ -1718,11 +1718,11 @@ MonoBehaviour:
   _keyCode: 99
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &4117959741682471015
@@ -1817,11 +1817,11 @@ MonoBehaviour:
   _keyCode: 110
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &504911506207978770
@@ -2073,11 +2073,11 @@ MonoBehaviour:
   _keyCode: 104
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &1526823964737714409
@@ -2330,11 +2330,11 @@ MonoBehaviour:
   _keyCode: 112
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &2061176174191358036
@@ -2587,11 +2587,11 @@ MonoBehaviour:
   _keyCode: 102
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &491911077764225802
@@ -2686,11 +2686,11 @@ MonoBehaviour:
   _keyCode: 106
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &3431644302773019847
@@ -2864,11 +2864,11 @@ MonoBehaviour:
   _keyCode: 122
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &8773150109635301522
@@ -2963,11 +2963,11 @@ MonoBehaviour:
   _keyCode: 116
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &2484611939440199995
@@ -3233,11 +3233,11 @@ MonoBehaviour:
   _keyCode: 103
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &2227226122054915717
@@ -3570,11 +3570,11 @@ MonoBehaviour:
   _keyCode: 107
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &6418352328522994516
@@ -3745,11 +3745,11 @@ MonoBehaviour:
   _keyCode: 108
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &762651883830593297
@@ -3844,11 +3844,11 @@ MonoBehaviour:
   _keyCode: 97
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &6082435214791925755
@@ -4338,11 +4338,11 @@ MonoBehaviour:
   _keyCode: 119
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &8564584531534678716
@@ -4516,11 +4516,11 @@ MonoBehaviour:
   _keyCode: 120
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &5617818401120708440
@@ -4615,11 +4615,11 @@ MonoBehaviour:
   _keyCode: 117
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &959635684664070610
@@ -4951,11 +4951,11 @@ MonoBehaviour:
   _keyCode: 109
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &2936746821578968617
@@ -5129,11 +5129,11 @@ MonoBehaviour:
   _keyCode: 111
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &5542326072972982844
@@ -5307,11 +5307,11 @@ MonoBehaviour:
   _keyCode: 121
   btnColor:
   - letterstate: 0
-    color: {r: 0.3060318, g: 0.8773585, b: 0.09518514, a: 1}
+    color: {r: 0.21960786, g: 0.72156864, b: 0.28235295, a: 1}
   - letterstate: 1
-    color: {r: 1, g: 0.9972117, b: 0, a: 1}
+    color: {r: 0.91372555, g: 0.86274517, b: 0, a: 1}
   - letterstate: 2
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
     color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
 --- !u!114 &1412532898610541605
