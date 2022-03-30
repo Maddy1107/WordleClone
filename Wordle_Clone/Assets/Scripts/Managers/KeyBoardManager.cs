@@ -60,7 +60,6 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
             if(state.letterstate == currState)
             {
                 btnImage.color = state.color;
-                btnText.color = Color.white;
                 break;
             }
         }
