@@ -85,11 +85,13 @@ public class GameManager : MonoBehaviour
     #region Add/Delete Letter
     public void AddNewLetter(string letter)
     {
+        Debug.Log(letter);
         if (currentState != GameState.idle)
             return;
 
         if (_enteredWordletters.Count < _grid.WordLength)
         {
+            Debug.Log(letter);
             lettersPrefab[(triesIndex * _grid.WordLength) + currentLetterIndex].SetLetterText(letter);
             currentLetterIndex += 1;
             _enteredWordletters.Add(letter);

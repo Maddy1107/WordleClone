@@ -8,12 +8,12 @@ public class LetterScript : MonoBehaviour
     Animator letterContainerAnim;
 
     readonly int letterContainerAnimStateParameter = Animator.StringToHash("State");
-
-    [SerializeField] private Image background;
+    private Image image;
     [SerializeField] private Text letterText;
 
     private void Start()
     {
+        image = GetComponent<Image>();
         letterText = GetComponentInChildren<Text>();
         letterContainerAnim = GetComponent<Animator>();
     }
@@ -22,12 +22,15 @@ public class LetterScript : MonoBehaviour
     {
         containingCharacter = letter;
         letterText.text = letter.ToString();
+        SetStateInt((int)LetterState.letter_enter);
     }
-
-    public void SetboxColor(Color color) => background.color = color;
 
     public void SetStateInt(int state) => letterContainerAnim.SetInteger(letterContainerAnimStateParameter, state);
     public void SetStateTrigger(string trigger) => letterContainerAnim.SetTrigger(trigger);
 
-    public void ClearLetterContainer() => letterText.text = "";
+    public void ClearLetterContainer()
+    {
+        letterText.text = "";
+        SetStateInt((int)LetterState.original);
+    }
 }

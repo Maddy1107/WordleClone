@@ -128,6 +128,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecaf5e618b0137b4bb39a44d54d1420c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toastImg: {fileID: 0}
   toastTxt: {fileID: 8640536046312308694}
-  duration: 1
+  duration: 2

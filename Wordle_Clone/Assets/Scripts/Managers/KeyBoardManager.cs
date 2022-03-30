@@ -22,7 +22,7 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        btnImage = gameObject.transform.GetChild(0).GetComponent<Image>();
+        btnImage = GetComponent<Image>();
         btnText = GetComponentInChildren<Text>();
         SetKeyboardButtonText();
     }
@@ -39,6 +39,7 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
 
     public void onTyped()
     {
+        Debug.Log("Enter");
         GameManager.instance.AddNewLetter(_keyCode.ToString());
         GameManager.instance.keys.Add(this);
     }
