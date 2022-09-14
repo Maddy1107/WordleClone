@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] Text status;
 
-    private string _currentword;
+    [SerializeField] private string _currentword;
     private string _enteredWord;
 
     private List<string> _currentwordLetters = new List<string>();
@@ -28,9 +29,9 @@ public class GameManager : MonoBehaviour
     public List<KeyBoardManager> keys = new List<KeyBoardManager>();
 
     private int currentLetterIndex = 0;
-    private int triesIndex = 0;
+    [SerializeField] private int triesIndex = 0;
 
-    private GameState currentState = GameState.isGridGenerating;
+    [SerializeField] private GameState currentState = GameState.isGridGenerating;
 
     #endregion
 
@@ -85,13 +86,11 @@ public class GameManager : MonoBehaviour
     #region Add/Delete Letter
     public void AddNewLetter(string letter)
     {
-        Debug.Log(letter);
         if (currentState != GameState.idle)
             return;
 
         if (_enteredWordletters.Count < _grid.WordLength)
         {
-            Debug.Log(letter);
             lettersPrefab[(triesIndex * _grid.WordLength) + currentLetterIndex].SetLetterText(letter);
             currentLetterIndex += 1;
             _enteredWordletters.Add(letter);
@@ -122,8 +121,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Debug.Log(WordLibraryManager.instance.CheckifValid(_enteredWord));
             ChangeState(GameState.isChecking);
-            if (true)//WordLibraryManager.instance.CheckifValid(_enteredWord))
+            if (true)
             {
                 for (int i = 0; i < _grid.WordLength; i++)
                 {
@@ -147,18 +147,7 @@ public class GameManager : MonoBehaviour
                         StartCoroutine(PlayLetterAnim(index, i * 0.3f, LetterState.correct));
                     }
                 }
-                if (_enteredWord == _currentword)
-                {
-                    status.text = "YOU WIN \nCORRECT WORD:" + _currentword.ToUpper();
-                    gameOverCanvas.GetComponent<Animator>().SetTrigger("UP");
-                }
-                else if(triesIndex >= 5)
-                {
-                    status.text = "YOU LOOSE \nCORRECT WORD:" + _currentword.ToUpper();
-                    gameOverCanvas.GetComponent<Animator>().SetTrigger("UP");
-                }
-                else
-                    ResetForNextTry();
+                CheckForGameEnd();
             }
             /*else
             {
@@ -167,6 +156,22 @@ public class GameManager : MonoBehaviour
                 ChangeState(GameState.idle);
             }*/
         }
+    }
+
+    private void CheckForGameEnd()
+    {
+        if (_enteredWord == _currentword)
+        {
+            status.text = "YOU WIN \n\nCORRECT WORD\n" + _currentword.ToUpper();
+            gameOverCanvas.GetComponent<Animator>().SetTrigger("Up");
+        }
+        else if (triesIndex >= 5)
+        {
+            status.text = "YOU LOSE \n\nCORRECT WORD\n" + _currentword.ToUpper();
+            gameOverCanvas.GetComponent<Animator>().SetTrigger("Up");
+        }
+        else
+            ResetForNextTry();
     }
 
     private void Shake()
@@ -188,7 +193,7 @@ public class GameManager : MonoBehaviour
         {
             if (key._keyCode == currKey)
             {
-                key.SetKeyBoardColor(state);
+                key.SetKeyBoardColor(state, false);
                 break;
             }
         }
@@ -212,7 +217,7 @@ public class GameManager : MonoBehaviour
 
         foreach (KeyBoardManager key in keys)
         {
-            key.SetKeyBoardColor(LetterState.original);
+            key.SetKeyBoardColor(LetterState.original, true);
         }
 
         foreach (LetterScript letters in lettersPrefab)

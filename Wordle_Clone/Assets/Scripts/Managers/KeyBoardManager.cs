@@ -25,6 +25,7 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
         btnImage = GetComponent<Image>();
         btnText = GetComponentInChildren<Text>();
         SetKeyboardButtonText();
+        SetKeyBoardColor(LetterState.original, true);
     }
 
     private void SetKeyboardButtonText()
@@ -39,7 +40,6 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
 
     public void onTyped()
     {
-        Debug.Log("Enter");
         GameManager.instance.AddNewLetter(_keyCode.ToString());
         GameManager.instance.keys.Add(this);
     }
@@ -54,14 +54,17 @@ public class KeyBoardManager : MonoBehaviour, IPointerClickHandler
         GameManager.instance.DeleteLastLetter();
     }
 
-    public void SetKeyBoardColor(LetterState currState)
+    public void SetKeyBoardColor(LetterState currState, bool isOrig)
     {
         foreach (BtnColor state in btnColor)
         {
             if(state.letterstate == currState)
             {
                 btnImage.color = state.color;
-                btnText.color = Color.white;
+                if(!isOrig)
+                    btnText.color = Color.white;
+                else
+                    btnText.color = Color.black;
                 break;
             }
         }

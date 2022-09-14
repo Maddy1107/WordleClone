@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6485313975274637891}
   - component: {fileID: 5100433022297200989}
   - component: {fileID: 591651688332640038}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1129180554419591334}
   - component: {fileID: 273913107905570181}
   - component: {fileID: 1717140085665847952}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3207923094478804091}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Footer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 493111068853361141}
   - component: {fileID: 317459004918681313}
   - component: {fileID: 7234949546969943725}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3252454181760401796}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 946374845591766460}
   - component: {fileID: 825946596877414323}
   - component: {fileID: 1627636726002470858}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5790803187750916213}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 7466938890294123533}
   - component: {fileID: 5967410625551566120}
   - component: {fileID: 8571703705121565414}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 5949564886355773249}
   - component: {fileID: 6656362199475329696}
   - component: {fileID: 4867708633983728661}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Scroll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 2170414544605054112}
   - component: {fileID: 4125068270827263453}
   - component: {fileID: 6601483101994096850}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6557157522251070157}
   - component: {fileID: 2103269128416639640}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: InstructionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -527.3706}
+  m_AnchoredPosition: {x: 0, y: -1420.6613}
   m_SizeDelta: {x: 0, y: 525.3844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2103269128416639640
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 5571527934374666161}
   - component: {fileID: 8538441094654693266}
   - component: {fileID: 3188682301035040292}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

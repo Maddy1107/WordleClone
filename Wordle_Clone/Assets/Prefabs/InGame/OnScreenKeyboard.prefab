@@ -238,7 +238,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &563065633751771289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &7202097552445974295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &4626018986673093800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &8862626945769158850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,7 +1091,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &111026715162201739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &5429142329616058171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1376858768016611656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2710059629247206288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &4117959741682471015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,7 +1823,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &504911506207978770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2079,7 +2079,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1526823964737714409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,7 +2336,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2061176174191358036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,7 +2593,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &491911077764225802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2692,7 +2692,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &3431644302773019847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,7 +2870,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &8773150109635301522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2969,7 +2969,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2484611939440199995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,8 +3116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 174.54527, y: -417}
-  m_SizeDelta: {x: 61.1035, y: 60.161}
+  m_AnchoredPosition: {x: 165.12473, y: -417}
+  m_SizeDelta: {x: 38.7119, y: 60.161}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4607304945865181536
 CanvasRenderer:
@@ -3239,7 +3239,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2227226122054915717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3576,7 +3576,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &6418352328522994516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3641,8 +3641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.4, y: 0}
-  m_SizeDelta: {x: -15.6175, y: -35.461}
+  m_AnchoredPosition: {x: -1.8567638, y: 0}
+  m_SizeDelta: {x: -7.3136, y: -35.461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9106137835829549332
 CanvasRenderer:
@@ -3751,7 +3751,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &762651883830593297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3850,7 +3850,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &6082435214791925755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3994,7 +3994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.8, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1164034318668710981
@@ -4344,7 +4344,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &8564584531534678716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4522,7 +4522,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &5617818401120708440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4621,7 +4621,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &959635684664070610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2936746821578968617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,7 +5135,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &5542326072972982844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5313,7 +5313,7 @@ MonoBehaviour:
   - letterstate: 2
     color: {r: 0.8196079, g: 0.24313727, b: 0.24313727, a: 1}
   - letterstate: 3
-    color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1412532898610541605
 MonoBehaviour:
   m_ObjectHideFlags: 0

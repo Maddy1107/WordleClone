@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GridCreatorScript : MonoBehaviour
 {
     [SerializeField] private int wordLength;
-    [SerializeField] private GridSizes wordLen;
+
     private int rows = 6;
 
     GridLayoutGroup _grid;
@@ -31,7 +31,13 @@ public class GridCreatorScript : MonoBehaviour
 
         _grid.constraintCount = rows;
 
-        Vector2 newSize = new Vector2((int)wordLen, _grid.cellSize.y);
+        float width = GetComponent<RectTransform>().rect.width;
+        float height = GetComponent<RectTransform>().rect.height;
+
+        float newCellWidth = Mathf.FloorToInt(width / wordLength);
+        float newCellHeight = Mathf.FloorToInt(height / rows);
+
+        Vector2 newSize = new Vector2(newCellWidth,newCellHeight) - _grid.spacing;
 
         _grid.cellSize = newSize;
     }
@@ -54,12 +60,4 @@ public class GridCreatorScript : MonoBehaviour
         if (offset/ _animGapTime >= (wordLength * rows) - 1)
             GameManager.instance.ChangeState(GameState.idle);
     }
-}
-
-public enum GridSizes
-{
-    FOUR=100,
-    FIVE=90,
-    SIX=70,
-    SEVEN=60
 }
